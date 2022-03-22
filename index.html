@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Pokedex de LaunchX</title>
+</head>
+
+
+<body id="pokeBody">
+
+  <div id="header">
+    <div id="pokemonLogo">
+      <img src="./assets/pngegg.png" alt="pokemonLogo">
+    </div>
+
+    <div id="mainText">
+      <h1>Pokedex LaunchX</h1>
+    </div>
+  </div>
+
+
+  <div id="pokeInstructions">
+    <h4>Ingresa el nombre de un Pokémon o su número de ID <br> en el buscador para conocer sus estadísticas y tipos</h3>
+  </div>
+
+  <div id="pokedexBackground">
+    <!-- <div id="pokeLight"></div> -->
+    <div id="pokeimgContainer">
+      <p id="pokeNumber">ID</p>
+      <img src="./assets/pokeball.png" alt="pokeBall" id="pokeImg">
+    </div>
+    <div id="pokeNameContainer">
+      <div id="pokeNameGlass">
+        <p id="pokeName">PokeName</p>
+      </div>
+
+    </div>
+    <form action="" onsubmit="fetchPokemon(event)" id="pokeSearch">
+      <input type="text" name="pokemon" autocomplete="off" id="pokeInput">
+      <button onclick="SubmitEvent">Buscar</button>
+    </form>
+    <div id="pokeStatsContainer">
+      <div id="pokeStatsContainerGlass">
+        <p id="pokeStat1"></p>
+        <p id="pokeStat2"></p>
+        <p id="pokeStat3"></p>
+        <p id="pokeStat4"></p>
+      </div>
+
+    </div>
+    <div id="pokeTypeContainer1">
+      <p id="pokeType1">Type 1</p>
+    </div>
+    <div id="pokeTypeContainer2">
+      <p id="pokeType2">Type 2</p>
+    </div>
+  </div>
+
+  
+
+  <div id="footer">
+    <div id="pokeLogoFooter">
+      <img src="./assets/pikachu.png" alt="pokeBallLogo">
+      <p>Proyecto realizado por Rodrigo Rivas Martínez utilizando el api de Pokémon (https://pokeapi.co/) <br> junto con HTML, CSS y JavaScript para el proyecto de LaunchX</p>
+    </div>
+  </div>
+</body>
+
+<script src="./script2.js"></script>
+
+</html>
